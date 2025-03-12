@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Navbar from './components/Navbar';
+import HeaderSlider from './components/HeaderSlider';
 import ProductCard from './components/ProductCard';
 import Cart from './components/Cart';
 import Wishlist from './components/Wishlist';
@@ -77,7 +78,9 @@ export default function App() {
         onWishlistClick={() => setIsWishlistOpen(true)}
       />
 
-      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-24 pb-16">
+      <HeaderSlider />
+
+      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="mb-12 text-center">
           <h1 className="text-5xl font-bold text-gray-900 mb-4">Discover Your Style</h1>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
